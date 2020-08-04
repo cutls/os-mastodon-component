@@ -67,7 +67,8 @@ export default class OpenSticker extends React.Component<Props, {}> {
 			}
 			break
 		}
-		return <div style={style}><span style={{marginLeft: '1rem'}}>{name}</span></div>
+		if(name) return <div style={style}><span style={{marginLeft: '1rem'}}>{name}</span></div>
+		return null
 	}
 }
 function setJson() {
