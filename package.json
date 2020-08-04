@@ -4,7 +4,7 @@
   "description": "OpenSticker Component for Mastodon",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc index.tsx --jsx react --target ES2015 --moduleResolution node"
   },
   "author": "Cutls P",
   "license": "MIT",
