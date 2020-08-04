@@ -57,7 +57,8 @@ export default class OpenSticker extends React.Component {
             };
             break;
         }
-        return React.createElement("div", { style: style }, name);
+        return React.createElement("div", { style: style },
+            React.createElement("span", { style: { marginLeft: '1rem' } }, name));
     }
 }
 function setJson() {
