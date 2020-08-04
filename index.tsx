@@ -19,7 +19,7 @@ setJson()
 type Props = {
 	acct: string
 }
-class OpenSticker extends React.Component<Props, {}> {
+export default class OpenSticker extends React.Component<Props, {}> {
 	getBgColor(type: 'mastodon'|'pleroma'|'misskey'|'misskeylegacy'|'pixelfed') {
 		if(type == 'mastodon') return `linear-gradient(90deg, #26a, transparent)`
 		if(type == 'pleroma') return `linear-gradient(90deg, #123, transparent)`

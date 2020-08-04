@@ -117,6 +117,7 @@ var OpenSticker = /** @class */ (function (_super) {
     };
     return OpenSticker;
 }(react_1["default"].Component));
+exports["default"] = OpenSticker;
 function setJson() {
     return __awaiter(this, void 0, void 0, function () {
         var promise, json;
