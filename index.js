@@ -59,6 +59,8 @@ export default class OpenSticker extends React.Component {
             style = {
                 background: bg,
                 color: fontColor,
+                height: '15px',
+                userSelect: 'none'
             };
             break;
         }

@@ -10,10 +10,6 @@ interface IOpenSticker {
 	domain: string
 	isDefault: boolean
 }
-interface OSCSS {
-	background: string
-	color: string
-}
 let json = localStorage.getItem('opensticker')
 if(!json) json = '[]'
 const data = JSON.parse(json) as IOpenSticker[]|[]
@@ -40,7 +36,7 @@ export default class OpenSticker extends React.Component<Props, {}> {
 		const m = acct.match(/.+@(.+)/)
 		if (!m) return null
 		domain = m[1]
-		let style = {} as OSCSS
+		let style = {} as React.CSSProperties
 		let name
 		if(data.length < 1) return <div>Please reload to show OpenSticker</div>
 		for (const instance of data) {
@@ -64,6 +60,8 @@ export default class OpenSticker extends React.Component<Props, {}> {
 			style = {
 				background: bg,
 				color: fontColor,
+				height: '15px',
+				userSelect: 'none'
 			}
 			break
 		}
