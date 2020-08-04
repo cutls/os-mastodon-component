@@ -42,6 +42,7 @@ export default class OpenSticker extends React.Component<Props, {}> {
 		domain = m[1]
 		let style = {} as OSCSS
 		let name
+		if(data.length < 1) return <div>Please reload to show OpenSticker</div>
 		for (const instance of data) {
 			if (instance.domain != domain) continue
 			const bgColor = instance.bgColor

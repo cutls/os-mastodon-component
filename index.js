@@ -34,6 +34,8 @@ export default class OpenSticker extends React.Component {
         domain = m[1];
         let style = {};
         let name;
+        if (data.length < 1)
+            return React.createElement("div", null, "Please reload to show OpenSticker");
         for (const instance of data) {
             if (instance.domain != domain)
                 continue;
