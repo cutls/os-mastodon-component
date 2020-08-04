@@ -1,5 +1,8 @@
 import * as React from 'react';
-const data = JSON.parse(localStorage.getItem('opensticker'));
+let json = localStorage.getItem('opensticker');
+if (!json)
+    json = '[]';
+const data = JSON.parse(json);
 setJson();
 export default class OpenSticker extends React.Component {
     getBgColor(type) {

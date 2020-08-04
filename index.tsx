@@ -14,7 +14,9 @@ interface OSCSS {
 	background: string
 	color: string
 }
-const data = JSON.parse(localStorage.getItem('opensticker')) as IOpenSticker[]
+let json = localStorage.getItem('opensticker')
+if(!json) json = '[]'
+const data = JSON.parse(json) as IOpenSticker[]|[]
 setJson()
 type Props = {
 	acct: string
