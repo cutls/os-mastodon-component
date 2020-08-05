@@ -61,7 +61,9 @@ export default class OpenSticker extends React.Component<Props, {}> {
 				background: bg,
 				color: fontColor,
 				height: '15px',
-				userSelect: 'none'
+				userSelect: 'none',
+				fontWeight: 'bolder',
+				textOverflow: 'ellipsis'
 			}
 			break
 		}
