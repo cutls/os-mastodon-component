@@ -62,7 +62,7 @@ export default class OpenSticker extends React.Component {
                 height: '15px',
                 userSelect: 'none',
                 fontWeight: 'bolder',
-                textOverflow: 'ellipsis'
+                overflow: 'hidden'
             };
             break;
         }
